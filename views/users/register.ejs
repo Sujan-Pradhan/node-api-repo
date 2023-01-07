@@ -37,7 +37,7 @@
 
       .card {
         width: 100%;
-        height: 61%;
+        height: 65%;
         border: 0;
         margin-bottom: 150px;
         margin-top: 150px;
@@ -185,7 +185,7 @@
             <div class="col-md-4 col-sm-6 ml-auto mr-auto">
               <div class="card">
                 <div class="card-body">
-                  <form>
+                  <form action="/postuser" method="post">
                     <div class="glowBox">
                       <h4 class="title">Sign Up</h4>
                       <div class="socialMedia">
@@ -200,77 +200,81 @@
                         </a>
                       </div>
                     </div>
+                    <div class="desc text-center">
+                      <p>Sign up now to use our services!</p>
+                    </div>
+                    <div class="signUp">
+                      <span>
+                        <input
+                          type="text"
+                          class="form"
+                          placeholder="Name"
+                          name="fullname"
+                          autocomplete="off"
+                          style="cursor: auto"
+                        />
+                        <span class="underline"></span>
+                      </span>
+                      <span>
+                        <input
+                          type="text"
+                          class="form"
+                          placeholder="Address"
+                          name="address"
+                          autocomplete="off"
+                          style="cursor: auto"
+                        />
+                        <span class="underline"></span>
+                      </span>
+                      <span>
+                        <input
+                          type="text"
+                          class="form"
+                          placeholder="Phone"
+                          name="phone"
+                          autocomplete="off"
+                          style="cursor: auto"
+                        />
+                        <span class="underline"></span>
+                      </span>
+                      <span>
+                        <input
+                          type="email"
+                          class="form"
+                          placeholder="Email"
+                          name="email"
+                          autocomplete="off"
+                          style="cursor: auto"
+                        />
+                        <span class="underline"></span>
+                      </span>
+                      <span>
+                        <input
+                          type="password"
+                          class="form"
+                          placeholder="Password"
+                          name="password"
+                          autocomplete="off"
+                          style="cursor: auto"
+                        />
+                        <span class="underline"></span>
+                      </span>
+                      <span>
+                        <input
+                          type="password"
+                          class="form"
+                          placeholder="Confirm Password"
+                          name="confirmPass"
+                          autocomplete="off"
+                          style="cursor: auto"
+                        />
+                        <span class="underline"></span>
+                      </span>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" name="submit" class="btn btn-primary btn-link btn-wd btn-lg">Sign Up</button>
+                    </div>
                   </form>
-                  <div class="desc text-center">
-                    <p>Sign up now to use our services!</p>
-                  </div>
-                  <div class="signUp">
-                    <span>
-                      <input
-                        type="text"
-                        class="form"
-                        placeholder="Name"
-                        autocomplete="off"
-                        style="cursor: auto"
-                      />
-                      <span class="underline"></span>
-                    </span>
-                    <span>
-                      <input
-                        type="text"
-                        class="form"
-                        placeholder="Address"
-                        autocomplete="off"
-                        style="cursor: auto"
-                      />
-                      <span class="underline"></span>
-                    </span>
-                    <span>
-                      <input
-                        type="text"
-                        class="form"
-                        placeholder="Phone"
-                        autocomplete="off"
-                        style="cursor: auto"
-                      />
-                      <span class="underline"></span>
-                    </span>
-                    <span>
-                      <input
-                        type="email"
-                        class="form"
-                        placeholder="Email"
-                        autocomplete="off"
-                        style="cursor: auto"
-                      />
-                      <span class="underline"></span>
-                    </span>
-                    <span>
-                      <input
-                        type="password"
-                        class="form"
-                        placeholder="Password"
-                        autocomplete="off"
-                        style="cursor: auto"
-                      />
-                      <span class="underline"></span>
-                    </span>
-                    <!-- <span>
-                      <input
-                        type="password"
-                        class="form"
-                        placeholder="Confirm Password"
-                        autocomplete="off"
-                        style="cursor: auto"
-                      />
-                      <span class="underline"></span>
-                    </span> -->
-                  </div>
-                  <div class="text-center">
-                    <a href="#" class="btn btn-primary btn-link btn-wd btn-lg"
-                      >Sign Up</a
-                    >
-                  </div>
                 </div>
               </div>
             </div>

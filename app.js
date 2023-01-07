@@ -21,10 +21,16 @@ app.use("/admin", AdminRouter);
 
 // 404 errror handling
 
-app.use((req, res, next) => {
-  let error = new Error("404! Page Not Found 😒");
-  error.status = 404;
-  next(error);
+// app.use((req, res, next) => {
+//   let error = new Error("404! Page Not Found 😒");
+//   error.status = 404;
+//   next(error);
+// });
+
+app.use((error, req, res, next) => {
+  res.json({
+    message: error.message
+  });
 });
 
 module.exports = app;
